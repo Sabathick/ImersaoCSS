@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: linear-gradient(90deg, darkorange,darkred);
+    background-color: rgb(40,40,40);
     font-family: Arial;
     font-family: 'Dosis', sans-serif;
     font-size: 12px;
@@ -28,22 +28,34 @@ header{
 }
 
 .menu{
- background-color:linear-gradient(90deg, darkorange,darkred);
- color:linear-gradient(90deg, darkorange,darkred);
+ background-color:rgb(40,40,40);
+ color:black;
  position: fixed;
+ display:fixed;
  width: 100vw;
  top: 0;
+ margin-top: 10px;
 }
 
 .menu a{
-    display : block;
-    padding: 10px, 20px;
-    transition: background-color 3s, color 1s;
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    padding: 20px, 30px;
+    color: black;
+    transition: 500ms linear;
+    background:#ffff00;
+    border-bottom: 7px solid #adad06;
+    border-right: 4px solid #adad06; 
+    border-top:10px;
+    border-radius: 20%;
 }
 
 .menu a:active,.menu a:hover{
-    background-color: sienna;
-    color: black;
+    transform: translateY(7px) translateX(4px);
+    border-bottom: 0px solid #ffff00;
+    background: #ffff00;
+    border-right: 0px solid #ffff00;
+    display: block;
 }
 .menu ul {
     display: flex;
@@ -54,12 +66,12 @@ header{
 }
 
 a{
-    color: darkred;
+    color: #ffff00;
     text-decoration: none;
 }
 
 .site-title, .site-subtitle{
-    color: black;
+    color: #ffff00;
     text-align: center;
 }
 .site-title{
@@ -78,20 +90,21 @@ a{
     margin-left: 2em;
 }
 
-.sobre .avatar img{
+.about .avatar img{
     border-radius: 10%;
 }
 
-.sobre p{
-    color:black;
+.about p{
+    color:#ffff00;
     text-indent: 1.4em;
     margin-bottom: 1.4em;
     text-align: justify;
 }
-.sobre, .contato, .portfolio{
+.about, .contact, .project{
     font-family: 'Audiowide', cursive;
-    background-image: linear-gradient(90deg, darkorange,darkred);
+    background-color:rgb(40,40,40);
     padding: 2em;
+    color: #ffff00;
     margin-bottom: 1em;
     font-size: 1.5em;
     min-height: 100vh;
@@ -107,19 +120,19 @@ a{
     }
 }
 
-.sobre, .contato, .portfolio .grid {
+.about, .contact, .project .grid {
     display: grid;
     gap: 1em;
     grid-template-columns: 240px;
 }
 @media (mind-width: (560px)){
-    .portfolio .grid{
+    .project .grid{
         grid-template-columns: 240px 240px;
     }
 }
 
 @media (mind-width: (880px)){
-    .portfolio .grid{
+    .project .grid{
         grid-template-columns: repeat(3, 240px);
         justify-content: center;
         align-content: center;
@@ -127,7 +140,7 @@ a{
     }
 }
 
-.portfolio figure{
+.project figure{
     text-align: center;
 }
 
@@ -153,7 +166,7 @@ a{
 }
 
 .card{
-    background-color: whitesmoke;
+    background-color: null;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1s;
@@ -164,7 +177,7 @@ a{
 }
 
 .card-back{
-    background-color: whitesmoke;
+    background-color: null;
     height: 180px;
     width: 100%;
     transform: rotateY(180deg);
@@ -176,18 +189,18 @@ a{
     right: 0;
 }
 
-.contato a{
-    color: black;
+.contact a{
+    color: #ffff00;
     font-size: 5em;
     transition: text-shadow 1s;
 }
 
-.contato a:active,.contato a:hover{
+.contact a:active, .contact a:hover{
     text-decoration:none;
     text-shadow: 1px 1px 10px rgba(255,255,255, .5);
 }
 
-.titulo{
+.title{
     transform: scale(0.2) translateY(50vh);
     opacity: 0;
     animation: linear 2s animacaoTitulo infinite;
