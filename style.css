@@ -85,13 +85,16 @@ a{
     line-height: 1.0em;
 }
 
-.sobre .avatar{
-    float: left;
-    margin-left: 2em;
+.about .avatar{
+    margin-left: none;
+    position: relative;
 }
 
 .about .avatar img{
-    border-radius: 10%;
+    border-radius: 10%; 
+    width: 320px;
+    height: 426px;
+    float: left;
 }
 
 .about p{
@@ -99,6 +102,8 @@ a{
     text-indent: 1.4em;
     margin-bottom: 1.4em;
     text-align: justify;
+
+    
 }
 .about, .contact, .project{
     font-family: 'Audiowide', cursive;
